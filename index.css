@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    background: rgb(252, 238, 217);
+}
+#top {
+    width: 100%;
+    height: 800px;
+    background-image: url("images/tou1_01.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+
+#top_wz {
+    position: relative;
+    top: 100px;
+    left: 550px;
+    width: 510px;
+    height: 250px;
+}
+#big_wz{
+    width: 510px;
+    height: 250px;
+    display: none;
+}
+#top_wz #big_wz .one {
+    float: left;
+    display: block;
+    width: 170px;
+    height: 280px;
+    /* background: red; */
+    /* display: block;
+    width: 280px;
+    height: 345px;
+    overflow: hidden;*/
+    background: url(images/xin.png) no-repeat;
+    background-size: 510px 280px;
+}
+
+#big_wz .two {
+    display: block;
+    width: 340px;
+    height: 280px;
+    background: url(images/xin.png) no-repeat -160px 0px;
+    background-size: 510px 280px;
+    float: left;
+}
+
+#top #top_wz #small_wz {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 300px;
+    height: 50px;
+    display: none;
+}
+
+#top #top_wz #small_wz .one {
+    display: block;
+    width: 150px;
+    height: 50px;
+    float: left;
+    /* background: gold; */
+    background: url(images/small.png)no-repeat;
+    background-size: 300px 50px;
+}
+
+#top #top_wz #small_wz .two {
+    display: block;
+    width: 150px;
+    height: 50px;
+    float: left;
+    background: url(images/small.png)no-repeat -150px 0;
+    background-size: 300px 50px;
+}
+
+#centent {
+    position: relative;
+    top: 125px;
+    left: 550px;
+    width: 600px;
+    height: 100px;
+    /* background:pink; */
+}
+
+#centent_wz {
+    height: 50px;
+    font-size: 22px;
+    font-family: "微软雅黑";
+    float: left;
+    line-height: 50px;
+}
+
+#centent_wz .yh::before {
+    content: '“'
+}
+
+#centent_wz .yh::after {
+    content: '”'
+}
+
+#centent_wz span {
+    display: inline-block;
+    margin-left: 15px;
+
+}
+
+#centent .icon {
+    float: left;
+}
+
+#centent .icon img {
+    width: 60px;
+    height: 40px;
+}
+#centent .zhu{
+    position: absolute;
+    bottom: -25px;
+    left: 20px;
+    width: 600px;
+    height: 50px;
+    font-size: 16px;
+}
+#centent .zhu span{
+display: inline-block;
+margin-right: 40px;
+}
+#centent .zhu span::before{
+    content: "主办方: ";
+}
+#red{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    
+}
+#red img{
+    width: 100%;
+    height: 250px;
+}

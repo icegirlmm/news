@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新时代，新使命</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        window.onload = function () {
+            // var big =document.getElementById("big_wz");
+            $("#top").css("opacity","0");
+           
+            $("#top").animate({
+                opacity: 1
+            }, 2000, function () {
+                $("#big_wz").css("display", "block");
+            $("#big_wz").addClass("animated zoomIn");
+            $("#small_wz").css("display", "block");
+            $("#small_wz").addClass("animated bounceInRight");
+            var time=window.setInterval(function(){
+                $("#big_wz").removeClass("animated zoomIn");
+             $("#big_wz").addClass("animated shake");
+
+            },1000);
+         });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="top">
+        <div id="top_wz">
+            <div id="big_wz">
+                <span class="one"></span>
+                <span class="two"></span>
+            </div>
+            <div id="small_wz">
+                <span class="one"></span>
+                <span class="two"></span>
+            </div>
+        </div>
+        <div id="centent">
+            <div id="centent_wz">
+                <span class="yh">江西检查</span>
+                <span>首届手机</span>
+                <span class="yh">微</span>
+                <span>电影大赛</span>
+            </div>
+            <div class="icon">
+                <span>
+                    <img src="images/icon.png" alt="">
+                </span>
+            </div>
+            <div class="zhu">
+                <span>江西省检查院</span>
+                <span>新法制报社</span>
+            </div>
+        </div>
+        <!-- <div id="red">
+            <img src="images/red.png" alt="">
+        </div> -->
+
+    </div>
+
+</body>
+
+</html>
