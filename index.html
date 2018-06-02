@@ -9,61 +9,58 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="animate.min.css">
     <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="index.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-        window.onload = function () {
-            // var big =document.getElementById("big_wz");
-            $("#top").css("opacity","0");
-           
-            $("#top").animate({
-                opacity: 1
-            }, 2000, function () {
-                $("#big_wz").css("display", "block");
-            $("#big_wz").addClass("animated zoomIn");
-            $("#small_wz").css("display", "block");
-            $("#small_wz").addClass("animated bounceInRight");
-            var time=window.setInterval(function(){
-                $("#big_wz").removeClass("animated zoomIn");
-             $("#big_wz").addClass("animated shake");
-
-            },1000);
-         });
-        }
-    </script>
+    <!-- <script src="index.js" type="text/javascript" charset="utf-8"></script> -->
 </head>
 
 <body>
+
     <div id="top">
+        <div id="img">
+        <img src="images/3.png" alt="" width="">
+    </div>
+        <!-- 头部文字新时代 -->
         <div id="top_wz">
+            <!-- 大文字 -->
             <div id="big_wz">
                 <span class="one"></span>
-                <span class="two"></span>
             </div>
+            <!-- 大文字end -->
+            <!-- 小文字 -->
             <div id="small_wz">
-                <span class="one"></span>
                 <span class="two"></span>
             </div>
         </div>
+        <!-- 小文字end -->
+        <!-- 头部文字新时代end -->
+
+        <!-- 江西评选 -->
         <div id="centent">
-            <div id="centent_wz">
-                <span class="yh">江西检查</span>
-                <span>首届手机</span>
-                <span class="yh">微</span>
-                <span>电影大赛</span>
+            <!-- 标题 -->
+            <div class="centent_top">
+                <div id="centent_wz">
+                    <span class="yh">江西检查</span>
+                    <span>首届手机</span>
+                    <span class="yh">微</span>
+                    <span>电影大赛</span>
+                </div>
+                <div class="icon">
+                    <span>
+                        <img src="images/icon.png" alt="">
+                    </span>
+                </div>
             </div>
-            <div class="icon">
-                <span>
-                    <img src="images/icon.png" alt="">
-                </span>
-            </div>
+            <!-- 标题end -->
+            <!-- 注册方 -->
             <div class="zhu">
                 <span>江西省检查院</span>
                 <span>新法制报社</span>
             </div>
         </div>
-        <!-- <div id="red">
-            <img src="images/red.png" alt="">
-        </div> -->
+        <!-- 注册方end -->
+        <!-- 江西评选end -->
+        <div id="red">
+            <!-- <img src="images/red.png" alt=""> -->
+        </div>
 
     </div>
 
