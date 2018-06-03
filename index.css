@@ -53,17 +53,19 @@ body {
     height: 353px;
     /* background: yellow; */
 }
-
-.centent #big_wz {
-    content: url(images/xin.png);
+.centent #big_wz{
     display: none;
+    width: 695px;
+    height: 353px;
+    background: url(images/xin.png) no-repeat;
 }
-
 .centent #small_wz {
+    width: 445px;
+    height: 66px;
     position: absolute;
     right: -30px;
     bottom: 0;
-    content: url(images/small.png);
+    background: url(images/small.png) no-repeat;
     display: none;
 }
 
